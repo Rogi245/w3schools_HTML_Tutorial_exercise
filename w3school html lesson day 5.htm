@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+	background-color: tomato;
+	color: white;
+	border: 2px solid black;
+	margin: 20px;
+	padding: 20px;
+	}
+
+.note {
+	font-size: 120%;
+	color: red;
+	}
+#myHeader {
+	background-color: lightblue;
+	color: black;
+	padding: 40px;
+	text-align: center;
+	}
+</style>
+</head>
+<body>
+<h2>Unordered HTML list</h2>
+<ul style="list-style-type:disc;">
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ul>
+<ul style="list-style-type:circle;">
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ul>
+<ul style="list-style-type:none;">
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ul>
+<ul>
+   <li>Coffee</li> 
+   <li>Tea
+      <ul>
+         <li>Black Tea</li>
+         <li>Green Tea</li>
+      </ul>
+   </li>
+   <li>Milk</li>
+</ul>
+
+
+<hr>
+
+<h2>Ordered HTML list</h2>
+<ol>
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ol>
+<ol type="A">
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ol>
+<ol type="A" start="3">
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ol>
+
+<hr>
+
+<h2>HTML Description Lists</h2>
+<dl>
+   <dt>Coffee</dt>
+   <dd>- black hot drink</dd>
+   <dt>Milk</dt>
+   <dd>- white cold drink</dd>
+</dl>
+
+<hr>
+
+<h2>Block and Inline Elements</h2>
+<p>Hello World</p>
+<div class="city">Hello World</div>
+<span class="note">Hello World</span>
+
+<hr>
+
+<h2>Use of the class Attribute in JavaScript</h2>
+<script>
+   function myFunction() {
+	var x = document.getElementsByClassName("city");
+	for (var i = 0; i < x.length; i++) {
+	  x[i].style.display = "none" ; 
+	  }
+	}
+</script>
+
+<hr>
+
+<h2 id="myHeader">id Attribute</h2>
+
+<hr>
+
+<h2>HTML Iframes</h2>
+<iframe src="https://www.google.com" title="google" height="200" width="300" style="border:none;"></iframe>
+
+</body>
+</html>
